@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Заголовок страницы</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile.css">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f1f1f1;
+}
+
+/* Шапка сайта */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #90b9d4;
+  color:white;
+}
+
+/* Увеличим размер шрифта элемента h1 */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Стили верхней навигационной панели */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Стили ссылок верхней нав.панели */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+/* Ссылка выравнивается по правому краю */
+.navbar a.right {
+  display: in;
+  float: right;
+}
+
+/* Меняем цвет при наведении мыши */
+.navbar a:hover {
+  background-color: #000000;
+  color: #90b9d4;
+}
+.footer {
+  padding: 20px; /* Поля */
+  text-align: center; /* Текст по центру */
+  background: #90b9d4; /*  фон */
+  margin-top: 20px;
+}
+
+.img-right {
+    transform: rotate(270deg);
+    padding: 80px;
+   }
+
+</style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#">Ассортимент</a>
+    <a href="#">Доставка</a>
+    <a href="#">Контакты</a>
+    <a href="#" class="right">поиск</a>
+  </div>
+
+<div class="header">
+  <img src="" alt="" class="img-right">
+  <h1>Название</h1>
+  <p>что то</p>
+</div>
+
+
+<div class="cards">
+<!-- Карточка товара -->
+<div class="card">
+  <!-- Верхняя часть -->
+  <div class="card__top">
+    <!-- Изображение-ссылка товара -->
+    <a  class="card__image">
+      <img
+        src="каталог.jpg"
+        alt="пионовидные розы"
+      />
+    </a>
+    <!-- Скидка на товар -->
+    <div class="card__label">-10%</div>
+  </div>
+  <!-- Нижняя часть -->
+  <div class="card__bottom">
+    <!-- Цены на товар (с учетом скидки и без)-->
+    <div class="card__prices">
+      <div class="card__price card__price--discount">130.99 </div>
+      <div class="card__price card__price--common">150.99 </div>
+    </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      пионоаидные розы
+    </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог1.jpg"
+        alt="розы"
+      />
+    </a>
+    <div class="card__label">-10%</div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">100.99 </div>
+      <div class="card__price card__price--common">120.99</div>
+    </div>
+    <a href="#" class="card__title">
+      розы
+    </a>
+    <button class="card__add">В корзину</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__top">
+    <a  class="card__image">
+      <img
+        src="каталог2.jpg"
+        alt="хризантемы"
+      />
+    </a>
+    <div class="card__label">-10%</div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">100.99</div>
+      <div class="card__price card__price--common">120.99</div>
+    </div>
+    <a href="#" class="card__title">
+      хризантемы
+    </a>
+    <button class="card__add">В корзину</button>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <h2>Подвал</h2>
+  </div>
